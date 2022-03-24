@@ -155,7 +155,6 @@ exports.deleteHospital = async (req, res, next) => {
 //@route    GET /api/v1/hospitals/vacCenters/
 //@access   Public
 exports.getVacCenters = (req, res, next) => {
-    console.log('Reached getVaccenters');
     vacCenter.getAll((err, data) => {
         if(err)
             res.status(500).send({
